@@ -27,7 +27,7 @@ where
             uri: uri.to_string(),
             headers: http::HeaderMap::default(),
             body,
-            timeout: std::time::Duration::from_secs(30),
+            timeout: std::time::Duration::from_secs(60),
             retries: 0,
         }
     }
@@ -40,7 +40,7 @@ where
             uri: uri.to_string(),
             headers: http::HeaderMap::default(),
             body: None,
-            timeout: std::time::Duration::from_secs(30),
+            timeout: std::time::Duration::from_secs(60),
             retries: 0,
         }
     }
@@ -53,7 +53,7 @@ where
             uri: uri.to_string(),
             headers: http::HeaderMap::default(),
             body,
-            timeout: std::time::Duration::from_secs(30),
+            timeout: std::time::Duration::from_secs(60),
             retries: 0,
         }
     }
@@ -66,7 +66,7 @@ where
             uri: uri.to_string(),
             headers: http::HeaderMap::default(),
             body: Some(body),
-            timeout: std::time::Duration::from_secs(30),
+            timeout: std::time::Duration::from_secs(60),
             retries: 0,
         }
     }
